@@ -13,7 +13,7 @@ import RealmSwift
  `RealmObserver` retains target realm object until it receives a .Completed or .Error event
   or the observer is being deinitialized
  */
-class RealmObserver<E>: ObserverType {
+open class RealmObserver<E>: ObserverType {
     var realm: Realm?
     var configuration: Realm.Configuration?
     
