@@ -32,7 +32,7 @@ open class RealmObserver<E>: ObserverType {
     /**
      Binds next element
      */
-    func on(_ event: Event<E>) {
+    public func on(_ event: Event<E>) {
         switch event {
         case .next(let element):
             //this will "cache" the realm on this thread, until completed/errored
